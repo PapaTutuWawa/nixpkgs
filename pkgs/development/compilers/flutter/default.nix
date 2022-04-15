@@ -29,7 +29,7 @@ in {
     pname = "flutter";
     src = fetchurl {
       url = "https://storage.googleapis.com/flutter_infra_release/releases/${channel}/linux/${filename}";
-      sha256 = "sha256-rSfwcglDV2rvJl10j7FByAWmghd2FYxrlkgYnvRO54m=";
+      sha256 = "sha256-2JpKBTa1zkpdd1UuXfKBaXBr8Z+SNlDzENd92siFL0Q=";
     };
     patches = getPatches ./patches;
   };
