@@ -12100,6 +12100,7 @@ with pkgs;
   flutterPackages =
     recurseIntoAttrs (callPackage ../development/compilers/flutter { });
   flutter = flutterPackages.stable;
+  flutter-beta = flutterPackages.beta;
 
   fnm = callPackage ../development/tools/fnm {
     inherit (darwin.apple_sdk.frameworks) DiskArbitration Foundation Security;
