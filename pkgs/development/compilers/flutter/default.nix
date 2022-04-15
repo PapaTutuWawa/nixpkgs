@@ -50,6 +50,6 @@ in {
       url = mkFlutterUrl version "beta";
       sha256 = "sha256-2JpKBTa1zkpdd1UuXfKBaXBr8Z+SNlDzENd92siFL0Q=";
     };
-    patches = [];
+    patches = getPatches ./patches;
   };
 }
