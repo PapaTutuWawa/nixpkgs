@@ -17,7 +17,7 @@ let
     sources = {
       "${dartVersion}-x86_64-linux" = fetchurl {
         url = "${dartSourceBase}/stable/release/${dartVersion}/sdk/dartsdk-linux-x64-release.zip";
-        sha256 = "sha256-PMY6DCFQC8XrlnFzOEPcwgBAs5/cAvNd78969Z+I1Fy=";
+        sha256 = "sha256-D0XcqlO0CQtpsne4heqaTLOkFYnJEZET4bl4rVXOM18=";
       };
     };
   };
