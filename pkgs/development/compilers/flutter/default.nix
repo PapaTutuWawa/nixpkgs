@@ -20,6 +20,12 @@ let
       };
     };
   };
+
+  dart-beta = mkDart {
+    channel = "beta";
+    version = "2.17.0-266.1.beta";
+    sha256 = "sha256-r9UlJ5COIYQwGHPvIlLhPtPZk41HrP8mKXtFN20WXlE=";
+  };
 in {
   mkDart = mkDart;
   mkFlutter = mkFlutter;
@@ -38,12 +44,9 @@ in {
     patches = getPatches ./patches;
   };
 
+  inherit dart-beta;
   beta = mkFlutter rec {
-    dart = mkDart {
-      channel = "beta";
-      version = "2.17.0-266.1.beta";
-      sha256 = "sha256-r9UlJ5COIYQwGHPvIlLhPtPZk41HrP8mKXtFN20WXlE=";
-    };
+    dart = dart-beta;
     version = "2.13.0-0.1.pre";
     pname = "flutter";
     src = fetchurl {
