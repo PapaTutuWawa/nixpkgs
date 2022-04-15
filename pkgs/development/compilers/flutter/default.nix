@@ -31,6 +31,6 @@ in {
       url = "https://storage.googleapis.com/flutter_infra_release/releases/${channel}/linux/${filename}";
       sha256 = "sha256-rSfwcglDV2rvJl10j7FByAWmghd2FYxrlkgYnvRO54m=";
     };
-    #patches = getPatches ./patches;
+    patches = getPatches ./patches;
   };
 }
