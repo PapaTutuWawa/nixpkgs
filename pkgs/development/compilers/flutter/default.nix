@@ -10,14 +10,14 @@ let
 
   # Decouples flutter derivation from dart derivation,
   # use specific dart version to not need to bump dart derivation when bumping flutter.
-  dartVersion = "2.17.0";
+  dartVersion = "2.17.0-266.1.beta";
   dartSourceBase = "https://storage.googleapis.com/dart-archive/channels";
   dartForFlutter = dart.override {
     version = dartVersion;
     sources = {
       "${dartVersion}-x86_64-linux" = fetchurl {
-        url = "${dartSourceBase}/stable/release/${dartVersion}/sdk/dartsdk-linux-x64-release.zip";
-        sha256 = "sha256-PMY6DCFQC8XrlnFzOEPcwgBAs5/cAvNd78969Z+I1Fm=";
+        url = "${dartSourceBase}/beta/release/${dartVersion}/sdk/dartsdk-linux-x64-release.zip";
+        sha256 = "sha256-PMY6DCFQC8XrlnFzOEPcwgBAs5/cAvNdaaaa9Z+I1Fm=";
       };
     };
   };
